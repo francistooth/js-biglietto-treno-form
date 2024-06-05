@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.color-white {
+    color: white;
+} 
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-lgray {
+    background-color: lightgray;
+}
+
+.color-magenta {
+    color: #b91450;
+}
+
+.bg-magenta {
+    background-color: #b91450;
+}
+
+label, input, select {
+    display: block;
+}
