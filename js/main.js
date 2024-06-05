@@ -14,16 +14,16 @@ btnSend.addEventListener("click",
 
         document.getElementById('details-name').innerHTML = fullName;
 
-        if (age = "over65") {
+        if (age == 'over65') {
             let price = km * 0.21;
             document.getElementById('details-price').innerHTML = Math.round(((price / 100) * 60) * 100) / 100 + "euro";
-        } else if (age = "minorenne") {
+        } else if (age == 'minorenne') {
             let price = km * 0.21;
-            document.getElementById('details-price').innerHTML = Math.round(((price / 100) * 80) * 100) / 100;
+            document.getElementById('details-price').innerHTML = Math.round(((price / 100) * 80) * 100) / 100 + "euro";
 
         } else {
             let price = km * 0.21;
-            document.getElementById('details-price').innerHTML = Math.round((price) * 100) / 100;
+            document.getElementById('details-price').innerHTML = Math.round((price) * 100) / 100 + "euro";
         }
     }
 );
