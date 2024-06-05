@@ -1,15 +1,36 @@
 const form = document.forms[0];
 const btnSend = document.getElementById("submit");
+const btnReset = document.getElementById("reset");
 let fullName;
 let km;
 let age;
 
-form.addEventListener("click", 
+btnSend.addEventListener("click", 
     function () { 
         fullName = document.getElementById("name").value;
         km = document.getElementById("km").value;
         age = document.getElementById("ageSelect").value;
         console.log(fullName + ",  "  + km + ",  " + age);
+
+        document.getElementById('details-name').innerHTML = fullName;
+
+        if (age = "over65") {
+            let price = km * 0.21;
+            document.getElementById('details-price').innerHTML = Math.round(((price / 100) * 60) * 100) / 100 + "euro";
+        } else if (age = "minorenne") {
+            let price = km * 0.21;
+            document.getElementById('details-price').innerHTML = Math.round(((price / 100) * 80) * 100) / 100;
+
+        } else {
+            let price = km * 0.21;
+            document.getElementById('details-price').innerHTML = Math.round((price) * 100) / 100;
+        }
+    }
+);
+
+btnReset.addEventListener("click", 
+    function () { 
+        form.reset();
     }
 );
 

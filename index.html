@@ -24,17 +24,52 @@
                         <div class="col-4">
                             <label for="ageSelect" class="color-magenta pb-2"> Fascia d'Et&aacute; </label>
                             <select name="age" id="ageSelect" class="mx-auto">
-                                <option value="Maggiorenne"> Maggiorenne </option>
-                                <option value="Minorenne"> Minorenne </option>
-                                <option value="Over65"> Over 65 </option>
+                                <option value="maggiorenne"> Maggiorenne </option>
+                                <option value="minorenne"> Minorenne </option>
+                                <option value="over65"> Over 65 </option>
                             </select>
                         </div>
                     </div>
                     <div class="d-flex gap-4 justify-content-center align-items-center text-center pb-4">
                         <div id="submit" type="submit" class="color-magenta rounded p-2 bg-lgray"> Genera </div>
-                        <div type="reset" class="color-magenta rounded p-2 bg-lgray"> Annulla </div>
+                        <div id="reset" type="reset" class="color-magenta rounded p-2 bg-lgray"> Annulla </div>
                     </div> 
                 </form>
+
+                <h1 class="text-center color-white pt-4 pb-4"> IL TUO BIGLIETTO </h1>
+
+                <div class="bg-white">
+                    <div class="container">
+                        <h2 class="text-center"> DETTAGLIO PASSEGGERI </h2>
+
+                        <div class="row pb-3">
+                            <div class="col-4">
+                                <h3> NOME PASSEGGERO </h3>
+                                <div class="details-name" id="details-name"></div>
+                            </div>
+
+                            <div class="col">
+                                <h3> Offerta </h3>
+                                <div class="details-offer"> Biglietto Standard </div>
+                            </div>
+
+                            <div class="col">
+                                <h3> Carrozza </h3>
+                                <div class="details-car"> 5 </div>
+                            </div>
+
+                            <div class="col">
+                                <h3> Codice CP </h3>
+                                <div class="details-code"> 92911 </div>
+                            </div>
+
+                            <div class="col">
+                                <h3> Costo Biglietto </h3>
+                                <div class="details-price" id="details-price"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
